@@ -1,0 +1,14 @@
+subagents-summary.md
+# Environment variables
+.env
+config.json
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
