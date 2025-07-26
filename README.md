@@ -32,8 +32,7 @@ I appreciate a star if you find this useful!
 - An OpenRouter API key ([get one here](https://openrouter.ai/))
 
 ## Default Model info
-You can use any model from OpenRouter.  Free models are supported.  moonshotai/kimi-k2:free is a free version of the same model but its unreliable currently. 
-I have defaulted to the paid model for now which is extremely inexpensive at $0.3 per million tokens in/out.
+You can use any model from OpenRouter.  I highly recommend you check your Openrouter settings > Privacy and > Paid Models and turn OFF "Enable providers that may train on inputs".  Otherwise you may be routed to a provider that does train on your inputs without your explicit consent.
 More info [here](https://openrouter.ai/moonshotai/kimi-k2)
 ## Setup Instructions
 
@@ -63,8 +62,8 @@ More info [here](https://openrouter.ai/moonshotai/kimi-k2)
    - Example:
      ```json
      {
-       "model": "moonshotai/kimi-k2:chutes",
-       "system_prompt": "You are a contrarian advisor. Challenge assumptions and provide alternative perspectives constructively."
+       "model": "moonshotai/kimi-k2:moonshotai",
+       "system_prompt": "You are a constructive deviation agent. For any proposal, surface 2–3 concretely different approaches (not just criticisms) and finish with a 1-sentence recommendation on which trade-off is most pragmatic given current constraints. Stay ≤ 300 words."
      }
      ```
 
